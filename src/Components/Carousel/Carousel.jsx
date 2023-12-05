@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Carousel.module.css';
 import Noticias from '../Noticias/Noticias';
+import imagem1 from '../../assets/banner_dti_intra.png';
+import imagem2 from '../../assets/banner_rh_intra.png';
+import imagem3 from '../../assets/banner_ouvidoria.png';
 
 const CarouselDestaques = () => {
-  const images = [
-    'http://intranet.tceal.tc.br/v3.2/imagens/banner_rh_intra.png',
-    'http://intranet.tceal.tc.br/v3.2/images/banner_ouvidoria.png',
-    'http://intranet.tceal.tc.br/v3.2/imagens/banner_dti_intra.png',
-  ];
+  const images = [imagem1, imagem2, imagem3];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
