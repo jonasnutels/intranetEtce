@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Content {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
