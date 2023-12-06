@@ -1,3 +1,6 @@
+.bannerImage {
+  display: flex;
+}
 .headerNav {
   height: 4rem;
   background-color: #2c427a;
@@ -12,7 +15,6 @@ ul {
   cursor: pointer;
   display: flex;
   color: white;
-  align-items: start;
 }
 
 .banner {
@@ -37,6 +39,10 @@ ul {
   width: 100%;
   height: 2rem;
 }
+.localizador {
+  display: flex;
+  gap: 1rem;
+}
 
 .buttonLocalizar {
   border-radius: 0.5rem;
@@ -45,7 +51,6 @@ ul {
   cursor: pointer;
   background-color: white;
   color: #3b59a4;
-  box-shadow: 0;
 }
 
 .buscas p {
@@ -54,5 +59,47 @@ ul {
 
 .outrasOpcoes {
   display: flex;
-  gap: 1rem;
+  /* align-content: space-between; */
+}
+/* ===========================================================  Mobile Styles ========================================================== */
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 990px) {
+  .banner {
+    width: 100%;
+    position: relative;
+  }
+
+  .logotce {
+    position: absolute;
+    top: 10px;
+    left: 1rem;
+    max-width: 7rem;
+  }
+
+  .headerNav {
+    height: 4rem;
+    background-color: #2c427a;
+    display: flex;
+    align-content: start;
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+
+  .menuNav {
+    cursor: pointer;
+    color: white;
+    white-space: nowrap;
+  }
+  .menuNav span {
+    gap: 2rem;
+  }
+
+  .localizador {
+    display: none;
+  }
+
+  .buscas p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
 }

@@ -22,28 +22,34 @@ function Header() {
     setLocalizador(inputValue);
   };
   return (
-    <div className={styles.nav}>
-      <img className={styles.banner} src={Banner} alt="" />
-      <img className={styles.logotce} src={LogoTce} alt="" />
-      <nav className={styles.headerNav}>
-        <ul>
-          <li>DIMOP</li>
-          <li>SELIC</li>
-          <li>TV CIDADÃ</li>
-        </ul>
-        <ul>
-          <div className={styles.localizador}>
-            <div className={styles.buscas}>
-              <input
-                type="text"
-                placeholder="Localizador de Processos"
-                value={localizador}
-                onChange={handleLocalizadorChange}
-              />
-              <div className={styles.outrasOpcoes}>
+    <div className={styles.Header}>
+      <div className={styles.bannerImage}>
+        <img className={styles.banner} src={Banner} alt="" />
+        <img className={styles.logotce} src={LogoTce} alt="" />
+      </div>
+
+      <div className={styles.headerNav}>
+        <div className={styles.menuNav}>
+          <ul>
+            <li>DIMOP</li>
+            <li>SEC</li>
+            <li>TV CIDADÃ</li>
+          </ul>
+        </div>
+
+        <div className={styles.localizador}>
+          <div className={styles.buscas}>
+            <input
+              type="text"
+              placeholder="Localizador de Processos"
+              value={localizador}
+              onChange={handleLocalizadorChange}
+            />
+            <div className={styles.outrasOpcoes}>
+              <ul>
                 <p>Busca Avançada</p>
                 <p>TC Digitalizados</p>
-              </div>
+              </ul>
             </div>
           </div>
           <button
@@ -52,8 +58,8 @@ function Header() {
           >
             Localizar
           </button>
-        </ul>
-      </nav>
+        </div>
+      </div>
     </div>
   );
 }

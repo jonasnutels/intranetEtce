@@ -28,3 +28,14 @@
 .activeDot {
   background-color: #555;
 }
+/* ===========================================================  Mobile Styles ========================================================== */
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 990px) {
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel img {
+    max-width: 100%;
+  }
+}

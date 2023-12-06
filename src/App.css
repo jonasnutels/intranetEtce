@@ -17,3 +17,12 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
+
+@media only screen and (max-width: 990px) {
+  .Content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
